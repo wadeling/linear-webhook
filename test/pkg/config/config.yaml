@@ -1,0 +1,19 @@
+server:
+  listen_addr: ":6500"
+  https:
+    certificate: "my.crt"
+    private_key: "my.key"
+linear:
+  api_addr: "https://api.linear.app/graphql"
+  api_keys:
+    -
+      workspace: workspace-bugs
+      api_key: lin_api_xxx
+    - 
+      workspace: workspace-prod
+      api_key: lin_api_yyy
+feishu:
+  webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/xxx"
+  app_id: cli_xxxx
+  app_secret: abcdef
+  staff_file: /root/staff.json
